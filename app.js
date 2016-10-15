@@ -10,7 +10,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-function for loading each image via XHR
+// function for loading each image via XHR
 
 function imgLoad(imgJSON) {
   // return a promise for an image loading
