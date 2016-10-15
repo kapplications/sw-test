@@ -2,11 +2,17 @@
 
 if ('serviceWorker' in navigator) {
 
-  addEventListener('install', function(event) {
+  window.addEventListener('install', function(event) {
+    console.log('Service worker installed.')
+  });
+  self.addEventListener('install', function(event) {
     console.log('Service worker installed.')
   });
 
-  addEventListener('activate', function (event) {
+  window.addEventListener('activate', function (event) {
+    console.log('Service worker activated.')
+  })
+  self.addEventListener('activate', function (event) {
     console.log('Service worker activated.')
   })
 
