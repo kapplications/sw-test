@@ -1,3 +1,5 @@
+console.log('inside registration')
+
 this.addEventListener('install', function(event) {
   console.log('Service worker installed.')
   // event.waitUntil(
